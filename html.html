@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="./css/theme.css">
+		<script src="./js/myscripts.js"></script>
+	</head>
+	<body>
+		<div class="cal_outline">
+			<div class="cal_header">
+					<header>
+							<h3>Calculator</h3>
+							<p>Simple Calculator</p>
+						</header>
+			</div>
+			
+
+			<div class="cal_display">
+				<input type="text" id="cal_display_values" placeholder="---Wellcome---"><br>
+				<input type="text" id="cal_display_result" readonly>
+				<button type="button" id="cal_button_reset" value='CL' onclick="calculatrClr()">CL</button>
+				<button type="button" id="cal_button_clear" value='CE' >CE</button>
+			</div>
+
+			<div class="cal_buttons">
+				<div class="cal_buttons_num">
+						<button type="button" id="cal_button_1" value='1' onclick="displayInScreen(1)">1</button>
+						<button type="button" id="cal_button_2" value='2' onclick="displayInScreen(2)">2</button>
+						<button type="button" id="cal_button_3" value='3' onclick="displayInScreen(3)">3</button>
+						<button type="button" id="cal_button_4" value='4' onclick="displayInScreen(4)">4</button>
+						<button type="button" id="cal_button_5" value='5' onclick="displayInScreen(5)">5</button>
+						<button type="button" id="cal_button_6" value='6' onclick="displayInScreen(6)">6</button>
+						<button type="button" id="cal_button_7" value='7' onclick="displayInScreen(7)">7</button>
+						<button type="button" id="cal_button_8" value='8' onclick="displayInScreen(8)">8</button>
+						<button type="button" id="cal_button_9" value='9' onclick="displayInScreen(9)">9</button>
+						<button type="button" id="cal_button_0" value='0' onclick="displayInScreen(0)">0</button>
+				</div>
+				<div class="cal_buttons_opr">
+						<button type="button" id="cal_button_plus" value='+' onclick="displayInScreen('+')">+</button>
+						<button type="button" id="cal_button_minus" value='-' onclick="displayInScreen('-')">-</button>
+						<button type="button" id="cal_button_multiply" value='*' onclick="displayInScreen('*')">*</button>
+						<button type="button" id="cal_button_devide" value='/' onclick="displayInScreen('/')">/</button>
+						<button type="button" id="cal_button_left_bracket" value='(' onclick="displayInScreen('(')">(</button>
+						<button type="button" id="cal_button_right_bracket" value=')' onclick="displayInScreen(')')">)</button>
+		
+						<button type="button" id="cal_button_result" value='=' onclick="calculateResult()">=</button>
+				</div>
+				<footer class="group"></footer>				
+			</div>
+
+		</div>
+	</body>
+</html> 
