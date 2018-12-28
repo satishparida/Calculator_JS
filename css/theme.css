@@ -1,7 +1,7 @@
 .cal_outline{
     margin: auto;
     padding: 0px 10px 10px 10px;
-    width: 30%;
+    width: 20%;
     border: 5px solid #232526;
     border-radius: 5px;
     height: auto;
@@ -20,7 +20,7 @@
 }
 
 .cal_display input[type=text]#cal_display_result{
-    width: 30%;
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -47,7 +47,7 @@
   }
 
 .cal_buttons button {
-    width: 10%;
+    width: 20%;
     background-color: #3a3a3a42;
     color: rgb(5, 6, 15);
     padding: 4px 2px 2px 2px;
@@ -62,14 +62,32 @@ button:hover {
     background-color: #1a191942;
   }
 
+.cal_buttons{
+    box-sizing: border-box;
+}
+
 .cal_buttons_num{
     float: left;
+    box-sizing: border-box;
+    width:60%;
 }
 
 .cal_buttons_opr{
     float : left;
+    box-sizing: border-box;
+    width:40%;
+}
+
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+
+.group:after{
+    clear:both;
 }
 
 .group{
-        clear: both;			
+    zoom:1;
 }

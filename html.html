@@ -16,13 +16,13 @@
 			
 
 			<div class="cal_display">
-				<input type="text" id="cal_display_values" placeholder="---Wellcome---"><br>
+				<input type="text" id="cal_display_values" placeholder="---Wellcome---" onkeypress="return isNumberKey(event)"><br> 
 				<input type="text" id="cal_display_result" readonly>
 				<button type="button" id="cal_button_reset" value='CL' onclick="calculatrClr()">CL</button>
-				<button type="button" id="cal_button_clear" value='CE' >CE</button>
+				<button type="button" id="cal_button_clear" value='CE' onclick="calculatrClr_except_Ans()">CE</button>
 			</div>
 
-			<div class="cal_buttons">
+			<div class="cal_buttons group">
 				<div class="cal_buttons_num">
 						<button type="button" id="cal_button_1" value='1' onclick="displayInScreen(1)">1</button>
 						<button type="button" id="cal_button_2" value='2' onclick="displayInScreen(2)">2</button>
@@ -34,6 +34,8 @@
 						<button type="button" id="cal_button_8" value='8' onclick="displayInScreen(8)">8</button>
 						<button type="button" id="cal_button_9" value='9' onclick="displayInScreen(9)">9</button>
 						<button type="button" id="cal_button_0" value='0' onclick="displayInScreen(0)">0</button>
+						<button type="button" id="cal_button_decimal" value='.' onclick="displayInScreen('.')">.</button>
+						<button type="button" id="cal_button_answer" value='0' onclick="displayInScreen(ans)">Ans</button>
 				</div>
 				<div class="cal_buttons_opr">
 						<button type="button" id="cal_button_plus" value='+' onclick="displayInScreen('+')">+</button>
@@ -44,8 +46,7 @@
 						<button type="button" id="cal_button_right_bracket" value=')' onclick="displayInScreen(')')">)</button>
 		
 						<button type="button" id="cal_button_result" value='=' onclick="calculateResult()">=</button>
-				</div>
-				<footer class="group"></footer>				
+				</div>			
 			</div>
 
 		</div>
